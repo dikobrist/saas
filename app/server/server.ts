@@ -77,6 +77,11 @@ app.prepare().then(() => {
     app.render(req, res, '/discussion', { teamSlug });
   });
 
+  server.get('/team/:teamSlug/words', (req, res) => {
+    const { teamSlug } = req.params;
+    app.render(req, res, '/words', { teamSlug });
+  });
+
   server.get('/team/:teamSlug/billing', (req, res) => {
     const { teamSlug } = req.params;
     app.render(req, res, '/billing', { teamSlug, ...(req.query || {}) });
