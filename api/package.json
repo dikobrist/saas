@@ -3,13 +3,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "engines": {
-<<<<<<< Updated upstream
-    "node": "12.18.2",
-    "yarn": "1.22.4"
-=======
     "node": "13.12.0",
     "yarn": "1.22.10"
->>>>>>> Stashed changes
   },
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only --project tsconfig.server.json server/server.ts",
